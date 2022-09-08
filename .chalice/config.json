@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "app_name": "presigned-url",
+  "api_gateway_stage": "api",
+  "iam_policy_file": "policy.json",
+  "environment_variables": {
+    "bucket": "evoters.in",
+    "region_name": "ap-south-1"
+  },
+  "stages": {
+    "dev": {
+      "environment_variables": {
+        "folder_location": "development/",
+        "aws_access_key_id": "",
+        "aws_secret_access_key": ""
+      }
+    },
+    "prod": {
+      "environment_variables": {
+        "folder_location": "production/",
+        "aws_access_key_id": "",
+        "aws_secret_access_key": ""
+      }
+    }
+  }
+}

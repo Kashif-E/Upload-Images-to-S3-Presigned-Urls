@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::597991982472:role/presigned-url-prod",
+      "role_name": "presigned-url-prod"
+    },
+    {
+      "name": "handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-south-1:597991982472:function:presigned-url-prod-handler"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
